@@ -1,10 +1,13 @@
 using BlazorServerDemo.Components;
+using DILibrary;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+builder.Services.AddSingleton<Demo>();
+builder.Services.AddSingleton<ProcessDemo>();
 
 var app = builder.Build();
 
