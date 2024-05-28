@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-builder.Services.AddSingleton<Demo>();
-builder.Services.AddSingleton<ProcessDemo>();
+builder.Services.AddTransient<IDemo, UtcDemo>();
+builder.Services.AddTransient<ProcessDemo>();
 
 var app = builder.Build();
 

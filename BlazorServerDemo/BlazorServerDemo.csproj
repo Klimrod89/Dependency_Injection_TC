@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DILibrary\DILibrary.csproj" />
+    <ProjectReference Include="..\BlazorServerDemo.Texts\BlazorServerDemo.Texts.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

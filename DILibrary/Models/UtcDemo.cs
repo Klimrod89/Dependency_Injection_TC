@@ -1,11 +1,11 @@
 ﻿namespace DILibrary;
 
-public class Demo : IDemo
+public class UtcDemo: IDemo
 {
     public DateTime StartupTime {get; init;}
 
-    public Demo()
+    public UtcDemo()
     {
-        StartupTime = DateTime.Now;
+        StartupTime = DateTime.UtcNow;
     }
 }
